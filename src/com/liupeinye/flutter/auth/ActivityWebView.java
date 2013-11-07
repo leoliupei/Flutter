@@ -2,6 +2,7 @@ package com.liupeinye.flutter.auth;
 
 import com.liupeinye.flutter.util.Constants;
 import com.liupeinye.flutter.util.JsonUtil;
+import com.liupeinye.flutter.util.RequestUtil;
 
 import android.graphics.Bitmap;
 import android.net.http.SslError;
@@ -52,7 +53,7 @@ public class ActivityWebView extends ActionBarActivity {
 		mWebView.getSettings().setJavaScriptEnabled(true);
 		mWebView.getSettings().setDomStorageEnabled(true);
 		mWebView.setWebViewClient(new MyWebViewClient());
-		mWebView.loadUrl(Constants.AUTH_URL);
+		mWebView.loadUrl(RequestUtil.getAuthUrl());
 	}
 
 	private class MyWebViewClient extends WebViewClient {

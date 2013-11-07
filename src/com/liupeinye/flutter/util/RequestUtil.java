@@ -1,6 +1,10 @@
 package com.liupeinye.flutter.util;
 
 public class RequestUtil {
+	
+	public static String getAuthUrl(){
+		return Constants.AUTH_URL;
+	}
 
 	public static String getRefreshAuthUrl(String refresh_token) {
 		return Constants.REFRESH_URL + refresh_token;

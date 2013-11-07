@@ -76,6 +76,7 @@ public class ActivityNavigation extends ActionBarActivity {
 			//产生List
 			System.out.println(token);
 			System.out.println(PrefUtil.getString("openid", ""));
+			System.out.println(PrefUtil.getString("nick", ""));
 			
 		} else {
 

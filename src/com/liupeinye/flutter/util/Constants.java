@@ -5,6 +5,7 @@ public class Constants {
 	public static final int REQUEST_NUM = 20;
 	public static final String APP_KEY = "801439648";
 	public static final String APP_SECRET = "3ab1c12b6faf46169a1c0df559daadb2";
+	
 	public static final String REDIRECT_URL = "http://www.liupeinye.com";
 	public static final String AUTH_URL = "https://open.t.qq.com/cgi-bin/oauth2/authorize?client_id=" + APP_KEY + "&wap=2&response_type=token&redirect_uri=" + REDIRECT_URL;
 	public static final String REFRESH_URL = "https://open.t.qq.com/cgi-bin/oauth2/access_token?client_id=" + APP_KEY + "&grant_type=refresh_token&refresh_token=";
